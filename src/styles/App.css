@@ -1,0 +1,42 @@
+@import "./Variable.css";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: var(--main-font-family);
+}
+
+.bingo__cards-container {
+  margin-top: 1rem;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, 20%);
+  color: var(--card-color);
+  justify-content: center;
+  width: 35rem;
+  height: 35rem;
+}
+
+/* Media responsive */
+
+@media (min-width: 120rem) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 60rem) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 30rem) {
+  html {
+    font-size: 8px;
+  }
+}

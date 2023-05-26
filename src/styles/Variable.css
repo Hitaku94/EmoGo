@@ -1,0 +1,9 @@
+:root {
+  --header-title-color: rgb(52, 45, 45);
+  --bingo-text-win-color: #540b0e;
+  --card-color: #bad7df;
+  --card-background-color: #fefae0;
+  --card-valid-background-color: radial-gradient(#344e41, #588157, #e9edc9);
+
+  --main-font-family: "Poppins", sans-serif;
+}

@@ -1,0 +1,59 @@
+@import "./Variable.css";
+
+.bingo__header {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.bingo__title {
+  color: var(--header-title-color);
+}
+
+.bingo__text-win {
+  display: flex;
+  z-index: 10;
+}
+
+/* Bingo animation */
+
+.bingo__text-win span {
+  color: var(--bingo-text-win-color);
+  margin: 1rem 2rem 0rem;
+  font-size: 4rem;
+  animation: fall 2s linear forwards;
+}
+
+.bingo__text-win > span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.bingo__text-win > span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.bingo__text-win > span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.bingo__text-win > span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.bingo__text-win--invisible {
+  margin: 1rem 2rem 0rem;
+  font-size: 4rem;
+  visibility: hidden;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-200px) scaleY(0.9);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(00px) scaleY(1);
+  }
+  75% {
+    transform: translateY(-50px) scaleY(1);
+  }
+  100% {
+    transform: translateY(0px) scaleY(1);
+  }
+}

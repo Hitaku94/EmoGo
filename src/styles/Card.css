@@ -1,0 +1,59 @@
+@import "./Variable.css";
+
+.card__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--card-background-color);
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 2px 2px 0px 0px rgba(24, 24, 24, 0.422);
+}
+
+.card__desc {
+  font-size: 2.5rem;
+  position: absolute;
+}
+
+.card__valid {
+  background: var(--card-valid-background-color);
+  animation: parentFromCenter 0.5s ease-in;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  border: 1px solid #e9edc9;
+}
+
+/* key frames */
+
+@keyframes parentFromCenter {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Media responsive */
+
+@media (min-width: 120rem) {
+  .card__desc {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 60rem) {
+  .card__desc {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .card__desc {
+    font-size: 2rem;
+  }
+}
